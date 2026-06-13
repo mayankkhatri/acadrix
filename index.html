@@ -10,6 +10,10 @@
     />
 
     <!-- CSS Stylesheets -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="styles.css" />
 
     <!-- Font Awesome for Icons -->
@@ -41,30 +45,11 @@
       <div class="container header-container">
         <!-- Logo -->
         <a href="#" class="logo" id="logo-link">
-          <div class="logo-icon">
-            <svg
-              viewBox="0 0 100 100"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="logo-svg"
-            >
-              <path
-                d="M48 15 L22 80 H36 L43 58 H63 L70 80 H84 Z M53 32 L60 50 H46 Z"
-                fill="#D99A3E"
-              />
-              <path
-                d="M12 75 C 32 92, 72 92, 92 72 C 98 65, 96 55, 88 50 C 76 42, 52 38, 32 45"
-                stroke="#D99A3E"
-                stroke-width="4.5"
-                stroke-linecap="round"
-                fill="none"
-              />
-            </svg>
-          </div>
-          <div class="logo-text">
-            <span class="logo-brand">ACADRIX</span>
-            <span class="logo-tagline">GLOBAL</span>
-          </div>
+          <img
+            src="assets/acadrix logo transparent.png"
+            alt="Acadrix Global Logo"
+            class="logo-img"
+          />
         </a>
 
         <!-- Navigation Links -->
@@ -545,54 +530,72 @@
         </div>
 
         <div class="partners-slider-wrapper">
-          <div class="partners-slider">
-            <!-- Harvard Logo -->
-            <div class="partner-logo">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Harvard_University_coat_of_arms.svg"
-                alt="Harvard University"
-              />
-              <span>HARVARD UNIVERSITY</span>
-            </div>
-            <!-- Melbourne Logo -->
-            <div class="partner-logo">
-              <img
-                src="https://cdn.freebiesupply.com/logos/thumbs/2x/the-university-of-melbourne-logo.png"
-                alt="University of Melbourne"
-              />
-              <span>THE UNIVERSITY OF MELBOURNE</span>
-            </div>
-            <!-- Toronto Logo -->
-            <div class="partner-logo">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Utoronto_coa.svg/1280px-Utoronto_coa.svg.png"
-                alt="University of Toronto"
-              />
-              <span>UNIVERSITY OF TORONTO</span>
-            </div>
-            <!-- UCL Logo -->
-            <div class="partner-logo">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjpnhRdT3Y0-WCCbqu-r5PL6DNePdL1Sq8Nw&s"
-                alt="UCL"
-              />
-              <span>UCL</span>
-            </div>
-            <!-- NUS Logo -->
-            <div class="partner-logo">
-              <img
-                src="https://nus.edu.sg/images/default-source/identity-images/NUS_logo_full-vertical.jpg"
-                alt="NUS"
-              />
-              <span>NUS</span>
-            </div>
-            <!-- Sydney Logo -->
-            <div class="partner-logo">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGENtMxxVGU3ShDGxuhwHy2oihWck0t6rMHw&s"
-                alt="University of Sydney"
-              />
-              <span>THE UNIVERSITY OF SYDNEY</span>
+          <div class="swiper partners-swiper">
+            <div class="swiper-wrapper">
+              <!-- Harvard Logo -->
+              <div class="swiper-slide partner-logo">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Harvard_University_coat_of_arms.svg"
+                  alt="Harvard University"
+                />
+                <span>HARVARD UNIVERSITY</span>
+              </div>
+              <!-- Melbourne Logo -->
+              <div class="swiper-slide partner-logo">
+                <img
+                  src="https://cdn.freebiesupply.com/logos/thumbs/2x/the-university-of-melbourne-logo.png"
+                  alt="University of Melbourne"
+                />
+                <span>THE UNIVERSITY OF MELBOURNE</span>
+              </div>
+              <!-- Toronto Logo -->
+              <div class="swiper-slide partner-logo">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Utoronto_coa.svg/1280px-Utoronto_coa.svg.png"
+                  alt="University of Toronto"
+                />
+                <span>UNIVERSITY OF TORONTO</span>
+              </div>
+              <!-- UCL Logo -->
+              <div class="swiper-slide partner-logo">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjpnhRdT3Y0-WCCbqu-r5PL6DNePdL1Sq8Nw&s"
+                  alt="UCL"
+                />
+                <span>UCL</span>
+              </div>
+              <!-- NUS Logo -->
+              <div class="swiper-slide partner-logo">
+                <img
+                  src="https://nus.edu.sg/images/default-source/identity-images/NUS_logo_full-vertical.jpg"
+                  alt="NUS"
+                />
+                <span>NUS</span>
+              </div>
+              <!-- Sydney Logo -->
+              <div class="swiper-slide partner-logo">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGENtMxxVGU3ShDGxuhwHy2oihWck0t6rMHw&s"
+                  alt="University of Sydney"
+                />
+                <span>THE UNIVERSITY OF SYDNEY</span>
+              </div>
+              <!-- MIT Logo -->
+              <div class="swiper-slide partner-logo">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/MIT_logo_2003-2023.svg/3840px-MIT_logo_2003-2023.svg.png?utm_source=wikitech.wikimedia.org&utm_campaign=index&utm_content=thumbnail"
+                  alt="MIT"
+                />
+                <span>MIT</span>
+              </div>
+              <!-- Imperial Logo -->
+              <div class="swiper-slide partner-logo">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/sco/thumb/a/ad/Imperial_College_London_crest.svg/1920px-Imperial_College_London_crest.svg.png"
+                  alt="Imperial College London"
+                />
+                <span>IMPERIAL COLLEGE</span>
+              </div>
             </div>
           </div>
         </div>
@@ -1100,30 +1103,11 @@
         <!-- Column 1: Info -->
         <div class="footer-col footer-info">
           <a href="#" class="logo footer-logo">
-            <div class="logo-icon">
-              <svg
-                viewBox="0 0 100 100"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                class="logo-svg"
-              >
-                <path
-                  d="M48 15 L22 80 H36 L43 58 H63 L70 80 H84 Z M53 32 L60 50 H46 Z"
-                  fill="#D99A3E"
-                />
-                <path
-                  d="M12 75 C 32 92, 72 92, 92 72 C 98 65, 96 55, 88 50 C 76 42, 52 38, 32 45"
-                  stroke="#D99A3E"
-                  stroke-width="4.5"
-                  stroke-linecap="round"
-                  fill="none"
-                />
-              </svg>
-            </div>
-            <div class="logo-text">
-              <span class="logo-brand">ACADRIX</span>
-              <span class="logo-tagline">GLOBAL</span>
-            </div>
+            <img
+              src="assets/acadrix logo transparent.png"
+              alt="Acadrix Global Logo"
+              class="logo-img footer-logo-img"
+            />
           </a>
           <p>
             Acadrix Global is a leading study abroad consultancy dedicated to
@@ -1344,6 +1328,9 @@
         </div>
       </div>
     </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- JavaScript Interaction Script -->
     <script src="script.js"></script>
