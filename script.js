@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // --- University Partners Carousel (Swiper JS) ---
-  const partnersSwiper = new Swiper('.partners-swiper', {
+  const partnersSwiper = new Swiper(".partners-swiper", {
     slidesPerView: 2,
     spaceBetween: 20,
     loop: true,
@@ -123,8 +123,8 @@ document.addEventListener("DOMContentLoaded", () => {
       disableOnInteraction: false,
     },
     navigation: {
-      nextEl: '.partners-control.next',
-      prevEl: '.partners-control.prev',
+      nextEl: ".partners-control.next",
+      prevEl: ".partners-control.prev",
     },
     breakpoints: {
       576: {
